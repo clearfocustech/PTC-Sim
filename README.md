@@ -76,11 +76,6 @@ PTC-Sim
 Requires Python 2.7.
 Other dependencies managed by the application include: Flask, Jinja, JQuery, and the GoogleMaps API.
 
-### Preview
-
-To preview PTC-Sim, navigate to https://ptc-sim.herokuapp.com/
-
-![PTC-Sim Screenshot](https://github.com/dustinfast/PTC-Sim/raw/master/docs/scrnshot.png "PTC-Sim Screenshot")
 
 ### Unimplemented
 
