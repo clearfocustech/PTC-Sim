@@ -1,0 +1,12 @@
+[Unit]
+Description=PTC-Sim
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/opt/PTC-Sim/
+ExecStart=/usr/bin/python2 /opt/PTC-Sim/sim_bos.py
+
+[Install]
+WantedBy=multi-user.target
