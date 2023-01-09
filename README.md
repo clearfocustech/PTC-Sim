@@ -1,6 +1,8 @@
-# PTC-Sim - Positive Train Control Simulation
+# About this fork
+This fork exposes the PTC-sim webserver beyond localhost and enables communication with a PTC WIU over IP
 
-[![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1)](https://ptc-sim.herokuapp.com/)
+
+# PTC-Sim - Positive Train Control Simulation
 
 This application is a Positive Train Control (PTC) Back Office Server (BOS) with web interface, track/locomotive simulators, and Edge Message Protocol (EMP) messaging subsystems. Development has begun with the intention of growing into an open-source PTC solution after observing first-hand the difficulties railroads are currently experiencing as they attempt to meet PTC implementation deadlines imposed by congress. It is a work in progress and distributable free under the MIT license. All images obtained under the Creative Common License.
 
@@ -16,6 +18,8 @@ Interoperability between railroads is also required, as defined by the Federal R
 PTC-Sim currently implements broker-assisted EMP communication between simulated on-track devices (locomotives and 220 MHz radio base-stations) and the BOS. Locomotive tracking and computer-aided-dispatch (CAD) is facilitated by a web interface, where current device status and location are displayed graphically. For the simulation, each web client gets its own "sanbox", consisting of an independent broker and track/locomotive simulator.
 
 ## Usage
+
+See Installation.md
 
 From a Linux terminal, start the application with `./sim_bos.py`, then navigate to `http://localhost:5000'
   
