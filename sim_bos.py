@@ -245,7 +245,13 @@ class Web(Process):
         Process.__init__(self)
 
     def run(self):
-        bos_web.run(debug=True, use_reloader=False)  # Blocks
+        # Import conf data
+        from ConfigParser import RawConfigParser
+        config = RawConfigParser()
+        config.read('app_config.dat')
+        WEB_IP = config.get('application', 'web_ip')
+        # Run Web Server
+        bos_web.run(debug=True, use_reloader=False, host=WEB_IP)  # Blocks
 
 
 # Starts web interface. BOS "sandboxes" are started on each client connection.
